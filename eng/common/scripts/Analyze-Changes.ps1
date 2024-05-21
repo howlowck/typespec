@@ -19,7 +19,7 @@ class IsolatedPackage {
 
 # Emitter packages in the repo
 $isolatedPackages = @{
-    "http-client-csharp" = [IsolatedPackage]::new(@("packages/http-client-csharp", ".editorconfig"), "RunCSharp", $false)
+    "http-client-csharp" = [IsolatedPackage]::new(@("packages/http-client-csharp", ".editorconfig", "vite.config.ts"), "RunCSharp", $false)
     "http-client-java" = [IsolatedPackage]::new(@("packages/http-client-java"), "RunJava", $false)
     "http-client-typescript" = [IsolatedPackage]::new(@("packages/http-client-typescript"), "RunTypeScript", $false)
     "http-client-python" = [IsolatedPackage]::new(@("packages/http-client-python"), "RunPython", $false)
